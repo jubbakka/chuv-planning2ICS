@@ -1,0 +1,14 @@
+{
+  "home": {
+    "headerTitle": "Ihre CHUV-Dienstpläne – jetzt digital und jederzeit griffbereit",
+    "headerText": "Keine verlorenen oder verstreuten Papiere mehr! Mit unserem Tool werden Ihre Dienstpläne digital und sind auf Ihrem Handy oder Computer abrufbar.\nAlles bleibt lokal auf Ihrem Gerät: Keine Daten werden ins Internet gesendet, Ihre Informationen bleiben vollständig privat und sicher.\nDas ICS-Format – Standard für digitale Kalender – ermöglicht es Ihnen, Ihre Schichten einfach einzusehen und direkt in Ihre gewohnten Kalender zu integrieren.",
+    "stepsTitle": "Vom Papier zum digitalen Kalender in 3 einfachen Schritten",
+    "step1Title": "Importieren Sie Ihren Dienstplan",
+    "step1Text": "Geben Sie Ihre CHUV-Dienste schnell, offline und sicher ein.",
+    "step2Title": "In digitalen Kalender umwandeln",
+    "step2Text": "Ihr Papierplan wird zu einer ICS-Datei, kompatibel mit Google Calendar, Outlook oder iCal, überall abrufbar, sogar offline.",
+    "step3Title": "Einfach einsehen",
+    "step3Text": "Ihre Schichten sind jederzeit auf all Ihren Geräten verfügbar. Prüfen Sie Ihre Dienste wann und wo Sie wollen, ohne nach Papier zu suchen.",
+    "cta": "Jetzt zum digitalen Plan wechseln"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "home": {
+    "headerTitle": "Vos plannings CHUV, désormais numériques et toujours à portée de main",
+    "headerTagline": "Simple. Sécurisé. Local.",
+    "headerText": "Fini le papier perdu ou dispersé ! Avec notre outil, vos plannings deviennent digitaux, accessibles sur votre téléphone ou votre ordinateur.\n\nTout se passe localement sur votre appareil : aucune donnée ne transite sur Internet, vos informations restent entièrement privées et sécurisées.\n\nLe format ICS – standard des agendas numériques – vous permet de consulter vos horaires de gardes et shifts facilement, et de les intégrer directement à vos calendriers habituels.",
+    "stepsTitle": "Du papier à votre agenda numérique en 3 étapes simples",
+    "step1Title": "Importez votre planning",
+    "step1Text": "Saisissez vos horaires CHUV rapidement, sans connexion Internet et en toute sécurité.",
+    "step2Title": "Transformez en agenda numérique",
+    "step2Text": "Votre planning papier devient un fichier ICS, compatible avec Google Calendar, Outlook ou iCal, consultable partout, même hors ligne.",
+    "step3Title": "Consultez facilement",
+    "step3Text": "Vos horaires sont toujours accessibles sur tous vos appareils. Consultez vos shifts quand vous voulez, où vous voulez, sans fouiller vos feuilles papier.",
+    "cta": "Passez au planning numérique dès maintenant",
+    "ctaSubtitle": "Prêt à gagner du temps et dire adieu au papier ?"
+  }
+}
