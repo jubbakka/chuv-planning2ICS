@@ -26,6 +26,7 @@ const Home = () => {
                         <option value="fr">Français</option>
                         <option value="en">English</option>
                         <option value="de">Deutsch</option>
+                        <option value="it">Italiano</option>
                     </select>
                 </div>
             </div>

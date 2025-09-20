@@ -1,14 +1,16 @@
 {
   "home": {
     "headerTitle": "Your CHUV schedules, now digital and always at your fingertips",
-    "headerText": "No more lost or scattered paper! With our tool, your schedules become digital, accessible on your phone or computer.\nEverything stays local on your device: no data is sent online, your information remains fully private and secure.\nThe ICS format – standard for digital calendars – lets you view your shifts easily and integrate them directly into your usual calendars.",
-    "stepsTitle": "From paper to your digital agenda in 3 simple steps",
+    "headerTagline": "Simple. Secure. Local.",
+    "headerText": "No more lost or scattered papers! With our tool, your schedules become digital, accessible on your phone or computer.\n\nEverything happens locally on your device: no data is transferred over the Internet, your information remains fully private and secure.\n\nThe ICS format – the standard for digital calendars – lets you easily view your shifts and duties, and integrate them directly into your usual calendars.",
+    "stepsTitle": "From paper to your digital calendar in 3 simple steps",
     "step1Title": "Import your schedule",
-    "step1Text": "Enter your CHUV shifts quickly, offline and securely.",
-    "step2Title": "Turn it into a digital calendar",
-    "step2Text": "Your paper schedule becomes an ICS file, compatible with Google Calendar, Outlook or iCal, accessible anywhere, even offline.",
-    "step3Title": "View anytime",
-    "step3Text": "Your shifts are always available on all your devices. Check your schedule whenever you want, wherever you are, without searching for paper.",
-    "cta": "Go digital now"
+    "step1Text": "Enter your CHUV shifts quickly, without Internet connection and with complete security.",
+    "step2Title": "Convert to a digital calendar",
+    "step2Text": "Your paper schedule becomes an ICS file, compatible with Google Calendar, Outlook or iCal, available anywhere, even offline.",
+    "step3Title": "Easily consult",
+    "step3Text": "Your shifts are always accessible on all your devices. Check your schedule whenever and wherever you want, without searching through paper sheets.",
+    "cta": "Switch to digital scheduling now",
+    "ctaSubtitle": "Ready to save time and say goodbye to paper?"
   }
 }
