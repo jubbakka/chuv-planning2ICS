@@ -1,69 +1,55 @@
-# React + TypeScript + Vite
+🏥 CHUV Planning Paper → ICS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Transforme les plannings papier du CHUV en fichiers .ics numériques.
 
-Currently, two official plugins are available:
+🇫🇷 Français
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Objectif :
+Transformer les plannings papier du CHUV en fichiers .ics numériques.
+Le MVP permet de créer une table vierge, remplir manuellement les codes de planning (J, N, X, …), et exporter le fichier calendrier.
 
-## Expanding the ESLint configuration
+Fonctionnalités MVP
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Création d’un tableau vierge (jours × employés).
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Édition manuelle des codes de planning.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Export en .ics compatible avec Google Calendar, Outlook, Apple Calendar…
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Sauvegarde / chargement local au format JSON.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Interface multilingue : Français, Italien, Allemand, Anglais.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+⚠️ L’upload d’image / OCR n’est pas inclus dans le MVP.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Améliorations futures
+
+OCR / Upload : permettre l’upload d’un planning papier (image ou PDF) et remplir automatiquement la table via reconnaissance de caractères.
+
+Stockage en base de données : sauvegarder les plannings par employé et par mois pour générer des synthèses (jour/nuit) utiles pour la paie ou les impôts.
+
+🇬🇧 English
+
+Goal:
+Transform CHUV paper schedules into digital .ics files.
+The MVP allows creating a blank table, manually filling shift codes (J, N, X, …), and exporting the calendar file.
+
+MVP Features
+
+Create a blank table (days × employees).
+
+Manual editing of shift codes.
+
+Export to .ics compatible with Google Calendar, Outlook, Apple Calendar…
+
+Local save/load in JSON format.
+
+Multilingual UI: French, Italian, German, English.
+
+⚠️ Image upload / OCR is not included in the MVP.
+
+Future Improvements
+
+OCR / Upload: allow uploading paper schedules (image or PDF) and automatically fill the table via character recognition.
+
+Database storage: save schedules per employee per month to generate summaries (day/night) useful for payroll or taxes.
