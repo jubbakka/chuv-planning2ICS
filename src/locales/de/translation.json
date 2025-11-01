@@ -36,5 +36,39 @@
     "october": "Oktober",
     "november": "November",
     "december": "Dezember"
+  },
+  "edit": {
+    "title": "Plan bearbeiten",
+    "save": "Speichern",
+    "export": "ICS exportieren",
+    "exportIndividual": "ICS pro Mitarbeiter",
+    "exportGlobal": "Globales ICS",
+    "back": "Zurück",
+    "selectCode": "Code auswählen",
+    "selectedCode": "Ausgewählter Code",
+    "saveSuccess": "Plan gespeichert!"
+  },
+  "privacy": {
+    "badge": "Daten lokal verarbeitet"
+  },
+  "import": {
+    "title": "Plan importieren",
+    "subtitle": "Laden Sie Ihren Papierplan (PNG oder PDF) hoch, um ihn in digitales Format zu konvertieren",
+    "back": "Zurück",
+    "dropFile": "Klicken Sie, um eine Datei auszuwählen",
+    "supportedFormats": "PNG oder PDF",
+    "process": "Datei verarbeiten",
+    "processing": "Verarbeitung läuft...",
+    "error": "Fehler",
+    "invalidFileType": "Nicht unterstütztes Format. Verwenden Sie PNG oder PDF.",
+    "noFileSelected": "Keine Datei ausgewählt",
+    "pdfNotYetSupported": "PDF-Import wird in Kürze verfügbar sein",
+    "parseError": "Daten können nicht extrahiert werden. Die Datei ist möglicherweise nicht lesbar.",
+    "processingError": "Beim Verarbeiten der Datei ist ein Fehler aufgetreten",
+    "infoTitle": "Wie funktioniert es?",
+    "info1": "Laden Sie Ihren gescannten Papierplan (PNG) oder PDF-Datei hoch",
+    "info2": "Unser System verwendet OCR, um Informationen automatisch zu extrahieren",
+    "info3": "Sie können die Daten vor der Generierung der ICS-Datei überprüfen und korrigieren",
+    "info4": "Alles läuft lokal auf Ihrem Gerät, Ihre Daten bleiben privat"
   }
 }

@@ -36,5 +36,39 @@
     "october": "Ottobre",
     "november": "Novembre",
     "december": "Dicembre"
+  },
+  "edit": {
+    "title": "Modifica programma",
+    "save": "Salva",
+    "export": "Esporta ICS",
+    "exportIndividual": "ICS per dipendente",
+    "exportGlobal": "ICS globale",
+    "back": "Indietro",
+    "selectCode": "Seleziona un codice",
+    "selectedCode": "Codice selezionato",
+    "saveSuccess": "Programma salvato!"
+  },
+  "privacy": {
+    "badge": "Dati elaborati localmente"
+  },
+  "import": {
+    "title": "Importa programma",
+    "subtitle": "Carica il tuo programma cartaceo (PNG o PDF) per convertirlo in formato digitale",
+    "back": "Indietro",
+    "dropFile": "Clicca per selezionare un file",
+    "supportedFormats": "PNG o PDF",
+    "process": "Elabora file",
+    "processing": "Elaborazione in corso...",
+    "error": "Errore",
+    "invalidFileType": "Formato non supportato. Usa PNG o PDF.",
+    "noFileSelected": "Nessun file selezionato",
+    "pdfNotYetSupported": "L'importazione PDF sarà disponibile a breve",
+    "parseError": "Impossibile estrarre i dati del programma. Il file potrebbe essere illeggibile.",
+    "processingError": "Si è verificato un errore durante l'elaborazione del file",
+    "infoTitle": "Come funziona?",
+    "info1": "Carica il tuo programma cartaceo scansionato (PNG) o file PDF",
+    "info2": "Il nostro sistema utilizza OCR per estrarre automaticamente le informazioni",
+    "info3": "Puoi verificare e correggere i dati prima di generare il file ICS",
+    "info4": "Tutto avviene localmente sul tuo dispositivo, i tuoi dati rimangono privati"
   }
 }
