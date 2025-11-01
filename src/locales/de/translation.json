@@ -12,5 +12,29 @@
     "step3Text": "Ihre Dienste sind jederzeit auf all Ihren Geräten verfügbar. Sehen Sie Ihre Schichten ein, wann und wo Sie möchten – ganz ohne Papierstapel.",
     "cta": "Wechseln Sie jetzt zum digitalen Dienstplan",
     "ctaSubtitle": "Bereit, Zeit zu sparen und Papier Lebewohl zu sagen?"
+  },
+  "createBlank": {
+    "title": "Leeren Plan erstellen",
+    "month": "Monat",
+    "year": "Jahr",
+    "employees": "Mitarbeiter",
+    "employeePlaceholder": "Name des Mitarbeiters",
+    "addEmployee": "+ Mitarbeiter hinzufügen",
+    "removeEmployee": "Mitarbeiter entfernen",
+    "generate": "Leeren Plan erstellen",
+    "back": "Zurück zu den Optionen",
+    "errorNoEmployee": "Mindestens ein Mitarbeiter ist erforderlich",
+    "january": "Januar",
+    "february": "Februar",
+    "march": "März",
+    "april": "April",
+    "may": "Mai",
+    "june": "Juni",
+    "july": "Juli",
+    "august": "August",
+    "september": "September",
+    "october": "Oktober",
+    "november": "November",
+    "december": "Dezember"
   }
 }

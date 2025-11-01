@@ -12,5 +12,29 @@
     "step3Text": "Vos horaires sont toujours accessibles sur tous vos appareils. Consultez vos shifts quand vous voulez, où vous voulez, sans fouiller vos feuilles papier.",
     "cta": "Passez au planning numérique dès maintenant",
     "ctaSubtitle": "Prêt à gagner du temps et dire adieu au papier ?"
+  },
+  "createBlank": {
+    "title": "Créer un Planning Vierge",
+    "month": "Mois",
+    "year": "Année",
+    "employees": "Employés",
+    "employeePlaceholder": "Nom de l'employé",
+    "addEmployee": "+ Ajouter un employé",
+    "removeEmployee": "Supprimer l'employé",
+    "generate": "Générer le Planning Vierge",
+    "back": "Retour aux options",
+    "errorNoEmployee": "Au moins un employé est requis",
+    "january": "Janvier",
+    "february": "Février",
+    "march": "Mars",
+    "april": "Avril",
+    "may": "Mai",
+    "june": "Juin",
+    "july": "Juillet",
+    "august": "Août",
+    "september": "Septembre",
+    "october": "Octobre",
+    "november": "Novembre",
+    "december": "Décembre"
   }
 }

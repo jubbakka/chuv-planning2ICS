@@ -12,5 +12,29 @@
     "step3Text": "I tuoi turni sono sempre accessibili su tutti i tuoi dispositivi. Controlla i tuoi orari quando vuoi e dove vuoi, senza cercare tra fogli di carta.",
     "cta": "Passa subito al planning digitale",
     "ctaSubtitle": "Pronto a risparmiare tempo e dire addio alla carta?"
+  },
+  "createBlank": {
+    "title": "Crea un programma vuoto",
+    "month": "Mese",
+    "year": "Anno",
+    "employees": "Dipendenti",
+    "employeePlaceholder": "Nome del dipendente",
+    "addEmployee": "+ Aggiungi un dipendente",
+    "removeEmployee": "Rimuovi dipendente",
+    "generate": "Genera programma vuoto",
+    "back": "Torna alle opzioni",
+    "errorNoEmployee": "È richiesto almeno un dipendente",
+    "january": "Gennaio",
+    "february": "Febbraio",
+    "march": "Marzo",
+    "april": "Aprile",
+    "may": "Maggio",
+    "june": "Giugno",
+    "july": "Luglio",
+    "august": "Agosto",
+    "september": "Settembre",
+    "october": "Ottobre",
+    "november": "Novembre",
+    "december": "Dicembre"
   }
 }
