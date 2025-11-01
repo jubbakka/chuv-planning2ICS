@@ -5,6 +5,7 @@ import {Button} from "@/components/ui/button";
 import {Calendar, ChevronLeft, ChevronRight, Globe, Plus, Trash2} from "lucide-react";
 import {Link, useNavigate} from "react-router-dom";
 import type {Employee, Schedule} from "@/types/schedule";
+import {generateId, saveSchedule, setCurrentSchedule} from "@/lib/scheduleStore";
 
 const CreateBlankSchedule = () => {
     const {t, i18n} = useTranslation();
@@ -14,12 +15,6 @@ const CreateBlankSchedule = () => {
         i18n.changeLanguage(lng);
     };
 
-    // Génération d'ID simple
-    const generateId = (): string => {
-        return Date.now().toString(36) + Math.random().toString(36).substr(2);
-    };
-
-    // État local
     const currentDate = new Date();
     const [month, setMonth] = useState<number>(currentDate.getMonth() + 1); // 1-12
     const [year, setYear] = useState<number>(currentDate.getFullYear());
@@ -27,7 +22,6 @@ const CreateBlankSchedule = () => {
         {id: generateId(), name: ''}
     ]);
 
-    // Liste des mois
     const months = [
         {value: 1, label: t("createBlank.january") || "Janvier"},
         {value: 2, label: t("createBlank.february") || "Février"},
@@ -43,7 +37,6 @@ const CreateBlankSchedule = () => {
         {value: 12, label: t("createBlank.december") || "Décembre"},
     ];
 
-    // Fonctions pour gérer les employés
     const addEmployee = () => {
         setEmployees([...employees, {id: generateId(), name: ''}]);
     };
@@ -60,20 +53,17 @@ const CreateBlankSchedule = () => {
         ));
     };
 
-    // Gestion de l'année
     const incrementYear = () => {
         setYear(year + 1);
     };
 
     const decrementYear = () => {
-        if (year > 2020) { // Année minimum raisonnable
+        if (year > 2020) {
             setYear(year - 1);
         }
     };
 
-    // Validation et génération du planning
     const handleGenerate = () => {
-        // Filtrer les employés vides et valider
         const validEmployees = employees
             .filter(emp => emp.name.trim() !== '')
             .map((emp): Employee => ({
@@ -86,27 +76,23 @@ const CreateBlankSchedule = () => {
             return;
         }
 
-        // Créer le planning
         const schedule: Schedule = {
             id: generateId(),
             month,
             year,
             employees: validEmployees,
-            entries: [] // Planning vierge = aucune entrée
+            entries: []
         };
 
-        // Stocker temporairement dans localStorage (on fera le store plus tard)
-        localStorage.setItem('currentSchedule', JSON.stringify(schedule));
-        localStorage.setItem(`schedule_${schedule.id}`, JSON.stringify(schedule));
+        saveSchedule(schedule);
+        setCurrentSchedule(schedule.id);
 
-        // Rediriger vers la page d'édition
         navigate(`/edit/${schedule.id}`);
     };
 
     return (
         <div
             className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-white flex flex-col p-4 sm:p-6 lg:p-12 font-['Roboto',sans-serif]">
-            {/* Sélecteur de langue */}
             <div className="absolute top-4 right-4 sm:top-6 sm:right-6 z-20">
                 <div
                     className="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg shadow-sm border border-gray-200">
@@ -125,7 +111,6 @@ const CreateBlankSchedule = () => {
                 </div>
             </div>
 
-            {/* En-tête */}
             <header className="relative text-center py-8 sm:py-12 lg:py-16">
                 <div className="absolute inset-0 flex items-center justify-center -z-10">
                     <div
@@ -142,13 +127,10 @@ const CreateBlankSchedule = () => {
                 </div>
             </header>
 
-            {/* Formulaire principal */}
             <main className="flex-grow w-full max-w-4xl mx-auto my-8">
                 <Card className="shadow-xl rounded-2xl bg-white border border-gray-200">
                     <CardContent className="p-6 sm:p-8">
-                        {/* Sélection Mois et Année */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-                            {/* Sélecteur de mois */}
                             <div>
                                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                                     {t("createBlank.month") || "Mois"}
@@ -166,7 +148,6 @@ const CreateBlankSchedule = () => {
                                 </select>
                             </div>
 
-                            {/* Sélecteur d'année */}
                             <div>
                                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                                     {t("createBlank.year") || "Année"}
@@ -203,7 +184,6 @@ const CreateBlankSchedule = () => {
                             </div>
                         </div>
 
-                        {/* Section Employés */}
                         <div className="mb-8">
                             <label className="block text-sm font-semibold text-gray-700 mb-4">
                                 {t("createBlank.employees") || "Employés"}
@@ -240,7 +220,6 @@ const CreateBlankSchedule = () => {
                             </Button>
                         </div>
 
-                        {/* Boutons d'action */}
                         <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-200">
                             <Button
                                 onClick={handleGenerate}

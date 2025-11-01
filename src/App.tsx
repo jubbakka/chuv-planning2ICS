@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import NotFound from "./pages/NotFound.tsx";
 import Home from "./pages/Home.tsx";
 import CreateBlankSchedule from "./pages/CreateBlankSchedule.tsx";
+import EditSchedule from "./pages/EditSchedule.tsx";
 
 const App = () => (
     <BrowserRouter>
@@ -12,6 +13,7 @@ const App = () => (
             <Route path="*" element={<NotFound/>}/>
             <Route path={"/"} element={<Home/>}/>
             <Route path={"/create-blank"} element={<CreateBlankSchedule/>}/>
+            <Route path={"/edit/:scheduleId"} element={<EditSchedule/>}/>
         </Routes>
     </BrowserRouter>
 );
