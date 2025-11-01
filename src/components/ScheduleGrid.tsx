@@ -8,57 +8,51 @@ interface ScheduleGridProps {
     onDownloadEmployee?: (employee: Employee) => void;
 }
 
-/**
- * Grille de planning : employés en lignes, jours en colonnes
- */
+
 const ScheduleGrid = ({ schedule, onCellClick, onDownloadEmployee }: ScheduleGridProps) => {
     const { month, year, employees, entries } = schedule;
 
-    // Calculer le nombre de jours dans le mois
+
     const daysInMonth = new Date(year, month, 0).getDate();
     const days = Array.from({ length: daysInMonth }, (_, i) => i + 1);
 
-    // Note: mondayFirstDay pourrait être utilisé pour aligner la grille avec les jours de la semaine
-    // Pour l'instant, on affiche simplement tous les jours du mois en colonnes
 
-    // Mapper les codes aux classes Tailwind
     const colorClasses: Record<string, string> = {
-        // Jours et leurs variantes
+
         J: 'bg-blue-100 text-blue-800',
         JC: 'bg-teal-100 text-teal-800',
         JB: 'bg-green-100 text-green-800',
-        // Nuits et jumelages de nuit
+
         N: 'bg-black text-yellow-300',
         NC: 'bg-black text-yellow-200',
         NA: 'bg-black text-yellow-300',
-        // Bloqués / Repos / Vacances
+
         X: 'bg-red-100 text-red-800',
         R: 'bg-yellow-100 text-yellow-800',
         V: 'bg-orange-100 text-orange-800',
-        // Santé & maternité
+
         M: 'bg-indigo-100 text-indigo-800',
         CM: 'bg-pink-100 text-pink-800',
         MM: 'bg-pink-200 text-pink-900',
-        // Formation
+
         F: 'bg-teal-100 text-teal-800',
     };
 
-    // Fonction pour obtenir l'entrée d'un employé pour un jour donné
+
     const getEntry = (employeeId: string, date: number): ScheduleEntry | undefined => {
         return entries.find(e => e.employeeId === employeeId && e.date === date);
     };
 
-    // Fonction pour vérifier si un jour est un weekend
+
     const isWeekend = (date: number): boolean => {
         const dayOfWeek = new Date(year, month - 1, date).getDay();
-        return dayOfWeek === 0 || dayOfWeek === 6; // Dimanche ou samedi
+        return dayOfWeek === 0 || dayOfWeek === 6;
     };
 
     return (
         <div className="overflow-x-auto">
             <div className="inline-block min-w-full">
                 <table className="border-collapse border border-gray-300 bg-white">
-                    {/* En-tête avec jours */}
                     <thead>
                         <tr>
                             <th className="border border-gray-300 bg-gray-100 p-2 text-left font-semibold text-gray-900 sticky left-0 z-10 bg-gray-100">
