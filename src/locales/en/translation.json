@@ -12,5 +12,63 @@
     "step3Text": "Your shifts are always accessible on all your devices. Check your schedule whenever and wherever you want, without searching through paper sheets.",
     "cta": "Switch to digital scheduling now",
     "ctaSubtitle": "Ready to save time and say goodbye to paper?"
+  },
+  "createBlank": {
+    "title": "Create a Blank Schedule",
+    "month": "Month",
+    "year": "Year",
+    "employees": "Employees",
+    "employeePlaceholder": "Employee name",
+    "addEmployee": "+ Add an employee",
+    "removeEmployee": "Remove employee",
+    "generate": "Generate Blank Schedule",
+    "back": "Back to options",
+    "errorNoEmployee": "At least one employee is required",
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "edit": {
+    "title": "Edit Schedule",
+    "save": "Save",
+    "export": "Export ICS",
+    "exportIndividual": "ICS per employee",
+    "exportGlobal": "Global ICS",
+    "back": "Back",
+    "selectCode": "Select a code",
+    "selectedCode": "Selected code",
+    "saveSuccess": "Schedule saved!"
+  },
+  "privacy": {
+    "badge": "Data processed locally"
+  },
+  "import": {
+    "title": "Import Schedule",
+    "subtitle": "Upload your paper schedule (PNG or PDF) to convert it to digital format",
+    "back": "Back",
+    "dropFile": "Click to select a file",
+    "supportedFormats": "PNG or PDF",
+    "process": "Process file",
+    "processing": "Processing...",
+    "error": "Error",
+    "invalidFileType": "Unsupported format. Use PNG or PDF.",
+    "noFileSelected": "No file selected",
+    "pdfNotYetSupported": "PDF import will be available soon",
+    "parseError": "Unable to extract schedule data. The file may be unreadable.",
+    "processingError": "An error occurred while processing the file",
+    "infoTitle": "How does it work?",
+    "info1": "Upload your scanned paper schedule (PNG) or PDF file",
+    "info2": "Our system uses OCR to automatically extract information",
+    "info3": "You can verify and correct the data before generating the ICS file",
+    "info4": "Everything happens locally on your device, your data remains private"
   }
 }

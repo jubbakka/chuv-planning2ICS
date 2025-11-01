@@ -12,5 +12,63 @@
     "step3Text": "Vos horaires sont toujours accessibles sur tous vos appareils. Consultez vos shifts quand vous voulez, où vous voulez, sans fouiller vos feuilles papier.",
     "cta": "Passez au planning numérique dès maintenant",
     "ctaSubtitle": "Prêt à gagner du temps et dire adieu au papier ?"
+  },
+  "createBlank": {
+    "title": "Créer un Planning Vierge",
+    "month": "Mois",
+    "year": "Année",
+    "employees": "Employés",
+    "employeePlaceholder": "Nom de l'employé",
+    "addEmployee": "+ Ajouter un employé",
+    "removeEmployee": "Supprimer l'employé",
+    "generate": "Générer le Planning Vierge",
+    "back": "Retour aux options",
+    "errorNoEmployee": "Au moins un employé est requis",
+    "january": "Janvier",
+    "february": "Février",
+    "march": "Mars",
+    "april": "Avril",
+    "may": "Mai",
+    "june": "Juin",
+    "july": "Juillet",
+    "august": "Août",
+    "september": "Septembre",
+    "october": "Octobre",
+    "november": "Novembre",
+    "december": "Décembre"
+  },
+  "edit": {
+    "title": "Éditer le Planning",
+    "save": "Sauvegarder",
+    "export": "Exporter ICS",
+    "exportIndividual": "ICS par employé",
+    "exportGlobal": "ICS global",
+    "back": "Retour",
+    "selectCode": "Sélectionner un code",
+    "selectedCode": "Code sélectionné",
+    "saveSuccess": "Planning sauvegardé !"
+  },
+  "privacy": {
+    "badge": "Données traitées localement"
+  },
+  "import": {
+    "title": "Importer un Planning",
+    "subtitle": "Téléchargez votre planning papier (PNG ou PDF) pour le convertir en format numérique",
+    "back": "Retour",
+    "dropFile": "Cliquez pour sélectionner un fichier",
+    "supportedFormats": "PNG ou PDF",
+    "process": "Traiter le fichier",
+    "processing": "Traitement en cours...",
+    "error": "Erreur",
+    "invalidFileType": "Format non supporté. Utilisez PNG ou PDF.",
+    "noFileSelected": "Aucun fichier sélectionné",
+    "pdfNotYetSupported": "L'import PDF sera disponible prochainement",
+    "parseError": "Impossible d'extraire les données du planning. Le fichier peut être illisible.",
+    "processingError": "Une erreur est survenue lors du traitement du fichier",
+    "infoTitle": "Comment ça marche ?",
+    "info1": "Téléchargez votre planning papier scanné (PNG) ou votre fichier PDF",
+    "info2": "Notre système utilise l'OCR pour extraire automatiquement les informations",
+    "info3": "Vous pourrez vérifier et corriger les données avant de générer le fichier ICS",
+    "info4": "Tout se passe localement sur votre appareil, vos données restent privées"
   }
 }
