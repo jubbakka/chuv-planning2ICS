@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Globe, Download, ArrowLeft } from "lucide-react";
 import type { Schedule, Employee } from "@/types/schedule";
-import { SCHEDULE_CODES } from "@/types/schedule";
+import { SCHEDULE_CODES, CODE_COLOR_CLASSES } from "@/types/schedule";
 import { getSchedule, addEntry, removeEntry } from "@/lib/scheduleStore";
 import { generateAllICS, downloadGlobalICS, generateICS, downloadICS } from "@/lib/icsGenerator";
 import ScheduleGrid from "@/components/ScheduleGrid";
@@ -136,26 +136,6 @@ const EditSchedule = () => {
         t("createBlank.december") || "Décembre",
     ];
 
-    const colorClasses: Record<string, string> = {
-
-        J: 'bg-blue-100 text-blue-800',
-        JC: 'bg-teal-100 text-teal-800',
-        JB: 'bg-green-100 text-green-800',
-
-        N: 'bg-black text-yellow-300',
-        NC: 'bg-black text-yellow-200',
-        NA: 'bg-black text-yellow-300',
-
-        X: 'bg-red-100 text-red-800',
-        R: 'bg-yellow-100 text-yellow-800',
-        V: 'bg-orange-100 text-orange-800',
-
-        M: 'bg-indigo-100 text-indigo-800',
-        CM: 'bg-pink-100 text-pink-800',
-        MM: 'bg-pink-200 text-pink-900',
-
-        F: 'bg-teal-100 text-teal-800',
-    };
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-white flex flex-col p-4 sm:p-6 lg:p-12 font-['Roboto',sans-serif]">
@@ -230,8 +210,8 @@ const EditSchedule = () => {
                                     onClick={() => setSelectedCode(code.code)}
                                     className={`px-4 py-2 rounded-full font-semibold text-sm transition-all ${
                                         selectedCode === code.code
-                                            ? `${colorClasses[code.code] || 'bg-gray-500 text-gray-800'} ring-4 ring-blue-300 scale-105`
-                                            : `${colorClasses[code.code] || 'bg-gray-500 text-gray-800'} opacity-70 hover:opacity-100`
+                                            ? `${CODE_COLOR_CLASSES[code.code] || 'bg-gray-500 text-gray-800'} ring-4 ring-blue-300 scale-105`
+                                            : `${CODE_COLOR_CLASSES[code.code] || 'bg-gray-500 text-gray-800'} opacity-70 hover:opacity-100`
                                     }`}
                                     aria-label={`Sélectionner ${code.description}`}
                                     aria-pressed={selectedCode === code.code}

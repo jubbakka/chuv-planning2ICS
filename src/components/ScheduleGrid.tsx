@@ -1,5 +1,5 @@
 import type { Schedule, ScheduleEntry, Employee } from "@/types/schedule";
-import { SCHEDULE_CODES } from "@/types/schedule";
+import { SCHEDULE_CODES, CODE_COLOR_CLASSES } from "@/types/schedule";
 import { Download } from "lucide-react";
 
 interface ScheduleGridProps {
@@ -17,26 +17,6 @@ const ScheduleGrid = ({ schedule, onCellClick, onDownloadEmployee }: ScheduleGri
     const days = Array.from({ length: daysInMonth }, (_, i) => i + 1);
 
 
-    const colorClasses: Record<string, string> = {
-
-        J: 'bg-blue-100 text-blue-800',
-        JC: 'bg-teal-100 text-teal-800',
-        JB: 'bg-green-100 text-green-800',
-
-        N: 'bg-black text-yellow-300',
-        NC: 'bg-black text-yellow-200',
-        NA: 'bg-black text-yellow-300',
-
-        X: 'bg-red-100 text-red-800',
-        R: 'bg-yellow-100 text-yellow-800',
-        V: 'bg-orange-100 text-orange-800',
-
-        M: 'bg-indigo-100 text-indigo-800',
-        CM: 'bg-pink-100 text-pink-800',
-        MM: 'bg-pink-200 text-pink-900',
-
-        F: 'bg-teal-100 text-teal-800',
-    };
 
 
     const getEntry = (employeeId: string, date: number): ScheduleEntry | undefined => {
@@ -96,7 +76,7 @@ const ScheduleGrid = ({ schedule, onCellClick, onDownloadEmployee }: ScheduleGri
                                             onClick={() => onCellClick(employee.id, day)}
                                             className={`border border-gray-300 p-2 text-center cursor-pointer transition-all min-w-[60px] rounded-lg ${
                                                 code && entry
-                                                    ? `${colorClasses[entry.code] || 'bg-gray-400 text-gray-800'} font-semibold hover:opacity-80 ${isWeekendDay ? 'opacity-90' : ''}`
+                                                    ? `${CODE_COLOR_CLASSES[entry.code] || 'bg-gray-400 text-gray-800'} font-semibold hover:opacity-80 ${isWeekendDay ? 'opacity-90' : ''}`
                                                     : isWeekendDay
                                                     ? 'bg-gray-100 hover:bg-gray-200 hover:border-gray-400'
                                                     : 'bg-white hover:bg-blue-50 hover:border-blue-300'
